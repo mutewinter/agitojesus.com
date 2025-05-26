@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "compatibility_date": "2025-05-08",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "./.output/server/index.mjs",
+  "name": "agitojesus",
+  "route": {
+    "custom_domain": true,
+    "pattern": "agitojesus.com"
+  },
+  "assets": {
+    "directory": "./.output/public/"
+  },
+  "observability": {
+    "enabled": true
+  }
+}
