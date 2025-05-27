@@ -47,8 +47,15 @@ function Home() {
       <div className="light-cone motion-preset-fade-sm motion-duration-1500 motion-delay-1500" />
       <main className="relative flex-1 w-full max-w-7xl mx-auto px-4 pt-12 flex flex-col gap-12">
         {copied && (
-          <div className="fixed top-4 right-4 bg-neutral-800 text-white px-4 py-2 rounded-lg shadow-lg animate-fade-in-out">
-            Bookmarklet code copied to clipboard!
+          <div className="fixed z-50 bottom-4 right-4 bg-black/90 backdrop-blur-sm text-white px-4 py-3 rounded-md shadow-2xl border border-neutral-800 motion-preset-slide-left-lg">
+            <div className="flex items-center gap-2">
+              <div className="flex-1">
+                <div className="text-sm font-medium">Copied to clipboard</div>
+                <div className="text-xs text-neutral-400">
+                  Now paste into a new bookmark URL
+                </div>
+              </div>
+            </div>
           </div>
         )}
 
