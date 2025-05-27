@@ -157,7 +157,6 @@ function Home() {
                   muted
                   loop
                   playsInline
-                  controls
                   poster="/images/agi-to-jesus-desktop-poster.png"
                 >
                   <source
